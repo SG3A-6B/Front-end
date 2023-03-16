@@ -1,7 +1,22 @@
-body{
+
+
+.container-fluid{
+  padding: 0px;
+  margin: 0px;
+  display: grid;
+  grid-template-rows: 1fr 5fr 4fr 2fr;
+}
+
+.homecontainer {
+  grid-row: 2/4;
   background-color: antiquewhite;
 }
 
 nav.navbar{
   padding-left: 25px;
+}
+
+footer{
+  background-color: rgb(170, 204, 167);
+  grid-row: 4/6;
 }
