@@ -1,5 +1,5 @@
 import React from 'react'
-
+import className from 'bootstrap'
 
 
 
@@ -21,12 +21,16 @@ export default function Home() {
 
         </div>
         <div className='product-thumbnail'>
-
-        </div>
-        <div className='product-thumbnail'>
-
-        </div>
-        
-    </div>
+            
+            </div>
+            <div className='product-thumbnail'>
+    
+            </div>
+            <div className='product-thumbnail'>
+    
+            </div>
+            <div className='product-thumbnail'>
+              </div>
+</div>
   )
 }
