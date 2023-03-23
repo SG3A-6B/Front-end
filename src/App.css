@@ -10,6 +10,18 @@
 .homecontainer {
   grid-row: 2/4;
   background-color: antiquewhite;
+  display: flex;
+}
+
+
+
+.product-thumbnail{
+  background-color: #fff;
+  width: 125px;
+  height: 125px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  margin: 35px auto;
 }
 
 nav.navbar{
