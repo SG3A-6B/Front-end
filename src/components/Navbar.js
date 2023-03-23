@@ -33,7 +33,7 @@ export default function Navbar({ url }) {
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Etusivu </a>
                     </li>
-                    
+
                     <li className="nav-item dropdown">
                         <a className="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Tuotteet</a>
                         <ul className="dropdown-menu" aria-labelledby="dropdown01">
