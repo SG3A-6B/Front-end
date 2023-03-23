@@ -1,34 +1,44 @@
-
-
-.container-fluid{
+@charset "UTF-8";
+/* Tähän palettimuuttujat */
+body {
   padding: 0px;
   margin: 0px;
-  display: grid;
-  grid-template-rows: 1fr 5fr 4fr 2fr;
 }
 
-.homecontainer {
-  grid-row: 2/4;
-  background-color: antiquewhite;
+.container-fluid {
+  padding: 0px;
+  margin: 0px;
+}
+
+.app-container {
+  min-width: 75vw;
+  height: 100vh;
+}
+
+.content-container {
+  height: 84vh;
+  max-width: 75vw;
+  margin: auto;
+  background-color: rgb(121, 134, 84);
+}
+.content-container img {
+  height: 56vh;
+  max-width: 75%;
+  margin: auto;
+}
+.content-container .product-thumbnail {
   display: flex;
+  justify-content: center;
 }
 
-
-
-.product-thumbnail{
-  background-color: #fff;
-  width: 125px;
-  height: 125px;
-  box-sizing: border-box;
-  border: 1px solid black;
-  margin: 35px auto;
-}
-
-nav.navbar{
+nav .navbar {
   padding-left: 25px;
+  width: 100vw;
 }
 
-footer{
+.footer-row {
   background-color: rgb(170, 204, 167);
-  grid-row: 4/6;
+  height: 10vh;
 }
+
+/*# sourceMappingURL=App.css.map */

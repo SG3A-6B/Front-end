@@ -1,59 +1,20 @@
 import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css'; 
-import {homecontainer, row, col} from 'react-bootstrap'
+import Carousel from '../components/Carousel';
+import Card from '../components/Card';
 
-
+/* Etusivunäkymä */
 
 export default function Home() {
 
-    
   return (
-    <div className="homecontainer container-fluid">
-      <div class="row">
-        <div class="col-3">
-          <div className='product-thumbnail'>
-            
-          </div>
-        </div>
-        <div class="col-3">
-          <div className='product-thumbnail'>
-
-          </div>
-        </div>
-        <div class="col-3">
-          <div className='product-thumbnail'>
-
-          </div>
-        </div>
-        <div class="col-3">
-          <div className='product-thumbnail'>
-
-          </div>
-        </div>
-      <div class="row">
-        <div class="col-3">
-          <div className='product-thumbnail'>
-            
-          </div>
-        </div>
-        <div class="col-3">
-          <div className='product-thumbnail'>
-    
-          </div>
-        </div>
-        <div class="col-3">
-          <div className='product-thumbnail'>
-    
-          </div>
-        </div>
-        <div class="col-3">
-          <div className='product-thumbnail'>
-
-          </div>
-        </div>
+    <div className='container-fluid content-container'>
+      <Carousel />
+      <div className='product-thumbnail'>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
       </div>
     </div>
-</div>
   )
 }
-

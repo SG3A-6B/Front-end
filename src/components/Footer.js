@@ -4,6 +4,10 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <footer></footer>
+      <div className='row footer-row'>
+        <div className='col footer-col'>
+          Footer
+        </div>
+      </div>
   )
 }

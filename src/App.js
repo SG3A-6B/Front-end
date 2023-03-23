@@ -12,7 +12,7 @@ function App() {
 
 
   return (
-    <div className='container-fluid'>
+    <div className='container-fluid app-container'>
       <Navbar url={URL} />
       <Home />
       <Footer />

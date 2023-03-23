@@ -1,0 +1,60 @@
+//SASS
+
+//Paletti
+
+/* Tähän palettimuuttujat */
+
+//Yleisiä perusmääritelmiä
+
+body{
+  padding: 0px;
+  margin: 0px;
+}
+
+.container-fluid {
+  padding: 0px;
+  margin: 0px;
+}
+
+.app-container { //App.js:n pää container
+  min-width: 75vw;
+  height: 100vh;
+}
+
+//Etusivu
+
+.content-container{
+  height: 84vh;
+  max-width: 75vw;
+  margin: auto;   //Siirtää näkymän keskelle
+  background-color: rgb(121, 134, 84);    //Väliaikainen väri
+
+  img{
+    height: 56vh;
+    max-width: 75%;
+    margin: auto;
+  }
+
+  .product-thumbnail{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+
+//Navbar
+
+nav {
+  .navbar{
+    padding-left: 25px;
+    width: 100vw;
+  }
+}
+
+//Footer
+
+.footer-row {
+  background-color: rgb(170, 204, 167); //Väliaikainen väri
+  height: 10vh;
+}
