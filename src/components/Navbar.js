@@ -1,11 +1,13 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 
-
-
-export default function Navbar({ url }) {
+export default function ProductNavbar({ url }) {
     const [categories, setCategories] = useState([])
 
     useEffect(() => {
@@ -22,31 +24,21 @@ export default function Navbar({ url }) {
 
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Verkkokauppa</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Etusivu </a>
-                    </li>
-
-                    <li className="nav-item dropdown">
-                        <a className="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Tuotteet</a>
-                        <ul className="dropdown-menu" aria-labelledby="dropdown01">
+        <Navbar className="navbar" expand="lg">
+            <Container>
+                <Navbar.Brand href="#home">Verkkokauppa</Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="me-auto">
+                        <Nav.Link href="#home">Etusivu</Nav.Link>
+                        <NavDropdown title="Tuotteet" id="basic-nav-dropdown">
                             {categories.map(category => (
-                                <li key={category.id}>
-                                    <a className="dropdown-item" to={"/products/" + category.id}>{category.name}
-                                    </a>
-                                </li>
+                                <NavDropdown.Item href={"/products/" + category.id} key={category.id}>{category.name}</NavDropdown.Item>
                             ))}
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                        </NavDropdown>
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
     )
 }

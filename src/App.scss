@@ -9,7 +9,7 @@ $darkergreen: #6B8E23;
 
 //Yleisiä perusmääritelmiä
 
-body{
+body {
   padding: 0px;
   margin: 0px;
 }
@@ -19,25 +19,26 @@ body{
   margin: 0px;
 }
 
-.app-container { //App.js:n pää container
+.app-container {
+  //App.js:n pää container
   min-width: 75vw;
   height: 100vh;
 }
 
 //Etusivu
 
-.content-container{
+.content-container {
   height: 84vh;
-  margin: auto;   //Siirtää näkymän keskelle
+  margin: auto; //Siirtää näkymän keskelle
   background-color: $green;
 
-  img{
+  img {
     height: 38vh;
     max-width: 45%;
     margin: auto;
   }
 
-  .product-thumbnail{
+  .product-thumbnail {
     display: flex;
     justify-content: center;
     margin: 15px;
@@ -48,12 +49,11 @@ body{
 
 //Navbar
 
-nav {
-  .navbar{
-    display:flex;
-    padding-left: 25px;
-    width: 100vw;
-  }
+.navbar {
+  display: flex;
+  padding-left: 25px;
+  width: 100vw;
+  background-color: #808000;
 }
 
 //Footer
