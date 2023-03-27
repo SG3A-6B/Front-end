@@ -29,10 +29,11 @@ body {
   margin: 15px;
 }
 
-nav .navbar {
+.navbar {
   display: flex;
   padding-left: 25px;
   width: 100vw;
+  background-color: #808000;
 }
 
 .footer-row {
