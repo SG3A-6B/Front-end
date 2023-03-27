@@ -14,8 +14,10 @@ export default function productCarousel() {
                     alt="Boots"
                 />
                 <Carousel.Caption>
+                <span className="font-link">
                     <h3>Erikoistarjous</h3>
                     <p>Kaikki jalkineet alkaen 29.99€</p>
+                    </span>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
