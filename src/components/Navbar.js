@@ -25,17 +25,18 @@ export default function ProductNavbar({ url }) {
 
     return (
         <Navbar className="navbar" expand="lg">
-            <Container>
-                <Navbar.Brand href="#home">Verkkokauppa</Navbar.Brand>
+            <Container className="navContainer">
+                <NavDropdown title="Tuotteet" id="basic-nav-dropdown">
+                    {categories.map(category => (
+                        <NavDropdown.Item href={"/products/" + category.id} key={category.id}>{category.name}</NavDropdown.Item>
+                    ))}
+                </NavDropdown>
+                <Navbar.Brand href="">Verkkokauppa</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="#home">Etusivu</Nav.Link>
-                        <NavDropdown title="Tuotteet" id="basic-nav-dropdown">
-                            {categories.map(category => (
-                                <NavDropdown.Item href={"/products/" + category.id} key={category.id}>{category.name}</NavDropdown.Item>
-                            ))}
-                        </NavDropdown>
+                        <Nav.Link href="">Info</Nav.Link>
+                        <Nav.Link className="info" href="">Ostoskori</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

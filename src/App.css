@@ -31,14 +31,24 @@ body {
 
 .navbar {
   display: flex;
-  padding-left: 25px;
   width: 100vw;
   background-color: #808000;
 }
+.navbar #basic-navbar-nav {
+  max-width: fit-content;
+}
+.navbar .info {
+  font-weight: bold;
+}
 
 .footer-row {
+  display: flex;
   background-color: #808000;
   height: 10vh;
+  justify-content: center;
+}
+.footer-row .col {
+  max-width: fit-content;
 }
 
 /*# sourceMappingURL=App.css.map */

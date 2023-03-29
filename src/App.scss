@@ -51,14 +51,29 @@ body {
 
 .navbar {
   display: flex;
-  padding-left: 25px;
   width: 100vw;
   background-color: #808000;
+
+  #basic-navbar-nav {
+    max-width: fit-content;
+  }
+
+  .info {
+    font-weight: bold;
+  }
 }
 
 //Footer
 
 .footer-row {
+  display: flex;
   background-color: $olive;
   height: 10vh;
+  justify-content: center;
+  
+  .col {
+    max-width: fit-content;
+  }
+
+  
 }
