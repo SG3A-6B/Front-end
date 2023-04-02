@@ -8,8 +8,26 @@ export default function Home() {
 
   return (
     <div className='container-fluid content-container'>
-      <Carousel />
+      <div className='category-thumbnail'>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
+      <div className='promo'>
+        Mainostilaa?
+      </div>
       <div className='product-thumbnail'>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
         <Card />
         <Card />
         <Card />

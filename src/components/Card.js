@@ -5,9 +5,9 @@ import { Button, Card } from 'react-bootstrap'
 
 export default function productCard() {
     return (
-        <Card style={{ width: '12rem', margin: '12px' }}>
-            <Card.Img style={{ height: '125px' }} variant="top" src={require("../images/knife.jpg")} />
-            <Card.Body>
+        <Card className='card'>
+            <Card.Img variant="top" src={require("../images/knife.jpg")} />
+            <Card.Body className='cardbody'>
                 <Card.Title>Puukot</Card.Title>
             </Card.Body>
         </Card>

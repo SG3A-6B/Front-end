@@ -22,13 +22,13 @@ body {
 .app-container {
   //App.js:n pää container
   min-width: 75vw;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 //Etusivu
 
 .content-container {
-  height: 84vh;
+  height: fit-content;
   margin: auto; //Siirtää näkymän keskelle
   background-color: $green;
 
@@ -38,10 +38,33 @@ body {
     margin: auto;
   }
 
-  .product-thumbnail {
-    display: flex;
+  .category-thumbnail {
+    display: inline-flex;
     justify-content: center;
-    margin: 15px;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: black; //Elementin havainnointia varten
+    width: 80%;
+    height: 70%;
+  }
+
+  .product-thumbnail {
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    min-height: fit-content;
+    background-color: gray; //Elementin havainnointia varten
+
+     .card{
+      width: 10rem;
+    }
+  }
+
+  .promo {
+    display: inline-flex;
+    background-color: antiquewhite; //Havainnointia varten
+    width: 20%;
   }
 }
 
@@ -51,7 +74,6 @@ body {
 
 .navbar {
   display: flex;
-  width: 100vw;
   background-color: #808000;
 
   #basic-navbar-nav {
@@ -66,14 +88,34 @@ body {
 //Footer
 
 .footer-row {
+  margin: 0px;
   display: flex;
   background-color: $olive;
-  height: 10vh;
+  padding: 0.5rem 0px;
   justify-content: center;
-  
+  position: static;
+
   .col {
     max-width: fit-content;
   }
+}
 
-  
+
+
+//Komponentit
+
+//Kortit
+
+.card {
+  margin: 12px;
+  width: 12rem;
+  height: fit-content;
+
+  >img {
+    height: 115px;
+  }
+
+  .cardbody {
+    padding: 5px 15px;
+  }
 }
