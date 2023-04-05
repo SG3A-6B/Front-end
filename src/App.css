@@ -16,6 +16,7 @@ body {
 .content-container {
   height: fit-content;
   margin: auto;
+  padding-top: 8vh;
   background-color: #9ACD32;
 }
 .content-container img {
@@ -52,6 +53,9 @@ body {
 .navbar {
   display: flex;
   background-color: #808000;
+  position: fixed;
+  width: 100%;
+  z-index: 500;
 }
 .navbar #basic-navbar-nav {
   max-width: fit-content;

@@ -30,6 +30,7 @@ body {
 .content-container {
   height: fit-content;
   margin: auto; //Siirtää näkymän keskelle
+  padding-top: 8vh;
   background-color: $green;
 
   img {
@@ -75,6 +76,9 @@ body {
 .navbar {
   display: flex;
   background-color: #808000;
+  position: fixed;
+  width: 100%;
+  z-index: 500;
 
   #basic-navbar-nav {
     max-width: fit-content;
