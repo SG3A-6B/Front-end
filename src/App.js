@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import { Link } from 'react-router-dom';
 import Footer from './components/Footer';
 import Home from './pages/Home';
+import Category from './pages/Category';
 
 
 const URL = 'http://localhost/partiobackend/';
@@ -15,7 +16,7 @@ function App() {
   return (
     <div className='container-fluid app-container'>
       <Navbar url={URL} />
-      <Home />
+      <Category />
       <Footer />
     </div>
   );
