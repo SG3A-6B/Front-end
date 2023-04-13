@@ -36,11 +36,7 @@ body {
   width: 100%;
   min-height: 60vh;
 }
-.content-container .category .category-thumbnail {
-  display: flex;
-  flex-wrap: wrap;
-}
-.content-container .product-thumbnail {
+.content-container .product {
   display: inline-flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -48,8 +44,12 @@ body {
   min-height: 40vh;
   background-color: gray;
 }
-.content-container .product-thumbnail .card {
+.content-container .product .card {
   width: 10rem;
+}
+.content-container .thumbnail {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .navbar {

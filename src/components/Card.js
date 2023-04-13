@@ -21,7 +21,7 @@ export default function ProductCard({ url }) {
     }, [])
 
     return (
-        <div className='category-thumbnail'>
+        <div className='thumbnail'>
             {categories.map(category => (
                 <Card className='card' onClick={ () => { window.location="/products/" + category.id}} key={category.id}>
                     <Card.Img variant="top" src={require("../images/" + category.id + ".jpg")} />

@@ -51,14 +51,9 @@ body {
     background-color: black; //Elementin havainnointia varten
     width: 100%;
     min-height: 60vh;
-
-    .category-thumbnail {
-      display: flex;
-      flex-wrap: wrap;
-    }
   }
 
-  .product-thumbnail {
+  .product {
     display: inline-flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -69,6 +64,11 @@ body {
      .card{
       width: 10rem;
     }
+  }
+
+  .thumbnail {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
