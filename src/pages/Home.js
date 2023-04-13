@@ -4,34 +4,15 @@ import Card from '../components/Card';
 
 /* Etusivunäkymä */
 
-export default function Home() {
+export default function Home({ url }) {
 
   return (
     <div className='container-fluid content-container'>
-      <div className='category-thumbnail'>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </div>
-      <div className='promo'>
-        Mainostilaa?
+      <div className='category'>
+        <Card url={url} />
       </div>
       <div className='product-thumbnail'>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        
       </div>
     </div>
   )
