@@ -24,6 +24,9 @@ body {
   max-width: 45%;
   margin: auto;
 }
+.content-container .card:hover {
+  cursor: pointer;
+}
 .content-container .category {
   display: inline-flex;
   justify-content: center;

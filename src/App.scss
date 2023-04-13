@@ -39,6 +39,10 @@ body {
     margin: auto;
   }
 
+  .card:hover {     //Tähän voi lisätä animaatioita yms
+    cursor: pointer;
+  }
+
   .category {
     display: inline-flex;
     justify-content: center;
