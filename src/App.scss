@@ -30,6 +30,7 @@ body {
 .content-container {
   height: fit-content;
   margin: auto; //Siirtää näkymän keskelle
+  padding-top: 8vh;
   background-color: $green;
 
   img {
@@ -38,22 +39,26 @@ body {
     margin: auto;
   }
 
-  .category-thumbnail {
-    display: inline-flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 10px;
-    background-color: black; //Elementin havainnointia varten
-    width: 80%;
-    height: 70%;
+  .card:hover {     //Tähän voi lisätä animaatioita yms
+    cursor: pointer;
   }
 
-  .product-thumbnail {
+  .category {
     display: inline-flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 80%;
-    min-height: fit-content;
+    padding: 2.5vh 15%;
+    background-color: black; //Elementin havainnointia varten
+    width: 100%;
+    min-height: 60vh;
+  }
+
+  .product {
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 40vh;
     background-color: gray; //Elementin havainnointia varten
 
      .card{
@@ -61,10 +66,9 @@ body {
     }
   }
 
-  .promo {
-    display: inline-flex;
-    background-color: antiquewhite; //Havainnointia varten
-    width: 20%;
+  .thumbnail {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -75,6 +79,9 @@ body {
 .navbar {
   display: flex;
   background-color: #808000;
+  position: fixed;
+  width: 100%;
+  z-index: 500;
 
   #basic-navbar-nav {
     max-width: fit-content;
