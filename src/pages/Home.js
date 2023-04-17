@@ -1,6 +1,6 @@
 import React from 'react'
 import Carousel from '../components/Carousel';
-import Card from '../components/Card';
+import Card from '../components/Card';   /* cardtype: category TAI product */
 
 /* Etusivunäkymä */
 
@@ -11,7 +11,7 @@ export default function Home({ url }) {
   return (
     <div className='container-fluid content-container'>
       <div className='category'>
-        <Card url={url} />
+        <Card url={url} cardtype='category' />
       </div>
       <div className='product'>
 
