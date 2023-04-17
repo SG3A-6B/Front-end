@@ -17,7 +17,8 @@ function App() {
     <div className='container-fluid app-container'>
       <Navbar url={URL} />
 
-      <Category />
+      <Category 
+      url={URL}/>
 
       <Footer />
     </div>
