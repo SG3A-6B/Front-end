@@ -10,7 +10,7 @@ export default function productCarousel() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={require("../images/boots.jpg")}
+                    src={require("../images/1.jpg")}
                     alt="Boots"
                 />
                 <Carousel.Caption>
@@ -23,7 +23,7 @@ export default function productCarousel() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={require("../images/tent.jpg")}
+                    src={require("../images/2.jpg")}
                     alt="Tent"
                 />
 
@@ -35,7 +35,7 @@ export default function productCarousel() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={require("../images/forest2.jpg")}
+                    src={require("../images/3.jpg")}
                     alt="Forest2"
                 />
 
