@@ -6,7 +6,7 @@ import { Button, Card } from 'react-bootstrap'
 
 export default function ProductCard({ url }) {
     const [categories, setCategories] = useState([])
-
+    sdfasdfasdfs
 
     useEffect(() => {
         console.log(url)
