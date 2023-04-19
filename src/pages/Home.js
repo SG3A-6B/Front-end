@@ -7,7 +7,7 @@ import Card from '../components/Card';
 /* HOX!!! Korteille täytyy tehdä toiminnallisuus, jolla se vaihtaa parametrin mukaan tekeekö kategoriakortin vai tuotekortin, tällä hetkellä tekee vain kategoriat */
 
 export default function Home({ url }) {
-  awfasfasfvsda
+  
   return (
     <div className='container-fluid content-container'>
       <div className='category'>
