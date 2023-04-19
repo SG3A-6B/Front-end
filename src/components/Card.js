@@ -4,7 +4,7 @@ import { Button, Card } from 'react-bootstrap'
 
 /* HOX!!! Kategoriat tarvitsevat kuvat tietokantaan */
 
-export default function ProductCard({ url }) {
+export default function CategoryCard({ url }) {
     const [categories, setCategories] = useState([])
     
 
