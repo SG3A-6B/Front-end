@@ -6,7 +6,7 @@ import { Button, Card } from 'react-bootstrap'
 
 export default function CategoryCard({ url }) {
     const [categories, setCategories] = useState([])
-    
+
 
     useEffect(() => {
         console.log(url)
@@ -23,8 +23,8 @@ export default function CategoryCard({ url }) {
     return (
         <div className='thumbnail'>
             {categories.map(category => (
-                <Card className='card' onClick={ () => { window.location="/products/" + category.id}} key={category.id}>
-                    <Card.Img variant="top" src={require("../images/" + category.id + ".jpg")} />
+                <Card className='card' onClick={() => { window.location = "/products/" + category.id }} key={category.id}> {/* Vaihdetaan toimimaan Route-avulla */}
+                    <Card.Img variant="top" src={require("../images/" + category.id + ".jpg")} /> {/* Muutetaan hakemaan oikea kuva kun mahdollista */}
                     <Card.Body className='cardbody'>
                         <Card.Title>{category.name}</Card.Title>
                     </Card.Body>
