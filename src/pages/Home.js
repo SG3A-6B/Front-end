@@ -13,7 +13,7 @@ export default function Home({ url }) {
         <CategoryCard url={url} />
       </div>
       <div className='product'>
-        {/* <ProductsCard url={url} /> */}
+        <ProductsCard url={url} />
       </div>
     </div>
   )

@@ -10,11 +10,12 @@ export default function ProductsCard({ url }) {
 
     useEffect(() => {
         console.log(url)
-        axios.get(url + 'products/getproducts.php')
+        axios.get(url + 'products/getproducts.php/' + '1')
             .then((response) => {
-                const json = response.data
+                const json = response.data.products
                 setProducts(json)
                 console.log(json)
+                console.log(products)
             }).catch(error => {
                 alert(error.response === undefined ? error : error.response.data.error)
             })
@@ -26,9 +27,9 @@ export default function ProductsCard({ url }) {
         <div className='thumbnail'>
             {products.map(product => (
                 <Card className='card' key={product.id}>
-                    <Card.Img variant="top" src={require(product.image)} />
+                    <Card.Img variant="top" /* src={require(url + 'images/' + product.image)} */ />
                     <Card.Body className='cardbody'>
-                        <Card.Title>{product.name}</Card.Title>
+                        <Card.Title>{product.brand} {product.name}</Card.Title>
                     </Card.Body>
                 </Card>
             ))}
