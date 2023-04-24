@@ -1,12 +1,12 @@
-import React from 'react'
-import Card from '../components/Card';
+import React from 'react';
+import ProductsCard from '../components/ProductsCard';
 
 export default function Category({url}) {
   return (
     
     <div className='container-fluid content-container containeeer'>
     <div className='category-thumbnail'>
-      <Card url={url} />
+      <ProductsCard url={url} />
     
    </div>
    </div>

@@ -17,8 +17,9 @@ function App() {
     <div className='container-fluid app-container'>
       <Navbar url={URL} />
 
-      <Category 
-      url={URL}/>
+      <Category url={URL} />
+
+      <Home url={URL} />
 
       <Footer />
     </div>
