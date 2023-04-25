@@ -16,11 +16,8 @@ function App() {
   return (
     <div className='container-fluid app-container'>
       <Navbar url={URL} />
-
-      <Category url={URL} />
-
       <Home url={URL} />
-
+      {/* <Category url={URL} /> */}      {/* Pitää käsitellä routella */}
       <Footer />
     </div>
   );
