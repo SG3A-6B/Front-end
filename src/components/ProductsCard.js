@@ -27,7 +27,7 @@ export default function ProductsCard({ url }) {
         <div className='thumbnail'>
             {products.map(product => (
                 <Card className='card' key={product.id}>
-                    <Card.Img variant="top" src={require(url + 'images/' + product.image)} />
+                    <Card.Img variant="top" src={(url + 'images/' + product.image)} />
                     <Card.Body className='cardbody'>
                         <Card.Title>{product.brand} {product.name} {product.price}€</Card.Title>
                     </Card.Body>

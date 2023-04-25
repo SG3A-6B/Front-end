@@ -12,9 +12,6 @@ export default function Home({ url }) {
       <div className='category'>
         <CategoryCard url={url} />
       </div>
-      <div className='product'>
-        <ProductsCard url={url} />
-      </div>
     </div>
   )
 }
