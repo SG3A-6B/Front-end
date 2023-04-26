@@ -90,4 +90,17 @@ body {
   padding: 5px 15px;
 }
 
+.content-container .about{
+  min-height: 90.6vh;
+}
+
+.about-title{
+  margin: 20px;
+  font-size: larger;
+}
+
+.about-content{
+  margin: 12px;
+}
+
 /*# sourceMappingURL=App.css.map */
