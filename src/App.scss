@@ -35,7 +35,6 @@ body {
 
   img {
     height: 38vh;
-    max-width: 45%;
     margin: auto;
   }
 
@@ -48,9 +47,9 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     padding: 2.5vh 15%;
-    background-color: black; //Elementin havainnointia varten
+    /* background-color: black; */ //Elementin havainnointia varten
     width: 100%;
-    min-height: 60vh;
+    min-height: 100vh;
   }
 
   .product {
@@ -59,7 +58,7 @@ body {
     flex-wrap: wrap;
     width: 100%;
     min-height: 40vh;
-    background-color: gray; //Elementin havainnointia varten
+    /* background-color: gray; */ //Elementin havainnointia varten
 
      .card{
       width: 10rem;
@@ -115,11 +114,11 @@ body {
 
 .card {
   margin: 12px;
-  width: 12rem;
+  width: 24rem;
   height: fit-content;
 
   >img {
-    height: 115px;
+    height: 255px;
   }
 
   .cardbody {
