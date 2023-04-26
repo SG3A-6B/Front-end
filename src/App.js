@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
+import Category from './pages/Category';
 
 
 const URL = 'http://localhost/partiobackend/';
