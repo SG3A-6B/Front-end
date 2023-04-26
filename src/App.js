@@ -6,6 +6,11 @@ import { Link, Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Category from './pages/Category';
+import ProductsCard from './components/ProductsCard';
+import ProductCard from './components/ProductCard';
+import About from './pages/About';
+import NotFound from './pages/NotFound';
+
 
 
 const URL = 'http://localhost/partiobackend/';
@@ -19,6 +24,10 @@ function App() {
       <div className='route-container'>
         <Routes>
           <Route path="/" element={<Home url={URL} />} />
+          <Route path="/products/:categoryId" element={<Category url={URL} />} />
+          <Route path="/product/:productId" element={<ProductCard url={URL} />} />
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
       <Footer />

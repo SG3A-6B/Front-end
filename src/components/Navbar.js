@@ -35,8 +35,8 @@ export default function ProductNavbar({ url }) {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="">Info</Nav.Link>
-                        <Nav.Link className="info" href="">Ostoskori</Nav.Link>
+                        <Nav.Link href="/about">Info</Nav.Link>
+                        <Nav.Link className="cart" href="/order">Ostoskori</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

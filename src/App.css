@@ -13,6 +13,16 @@ body {
   min-height: 100vh;
 }
 
+.route-container {
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2.5vh 15%;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #9ACD32;
+}
+
 .content-container {
   height: fit-content;
   margin: auto;
@@ -31,7 +41,6 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   padding: 2.5vh 15%;
-  /* background-color: black; */
   width: 100%;
   min-height: 100vh;
 }
@@ -41,7 +50,6 @@ body {
   flex-wrap: wrap;
   width: 100%;
   min-height: 40vh;
-  /* background-color: gray; */
 }
 .content-container .product .card {
   width: 10rem;
@@ -75,6 +83,10 @@ body {
 }
 .footer-row .col {
   max-width: fit-content;
+}
+
+#notfound {
+  margin-top: 25vh;
 }
 
 .card {
