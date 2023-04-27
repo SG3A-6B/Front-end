@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Button, Card } from 'react-bootstrap'
+import { useParams } from 'react-router-dom'
 
 
 
@@ -8,9 +9,15 @@ import { Button, Card } from 'react-bootstrap'
 export default function ProductsCard({ url }) {
     const [products, setProducts] = useState([])
 
+    let params = useParams()
+
     useEffect(() => {
+        let address = url + 'products/getproducts.php/'
+        let categoryId = params.categoryId
+
+
         console.log(url)
-        axios.get(url + 'products/getproducts.php/' + '1')
+        axios.get(address + categoryId)
             .then((response) => {
                 const json = response.data.products
                 setProducts(json)
