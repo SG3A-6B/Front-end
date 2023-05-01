@@ -7,6 +7,7 @@ export default function Category({url}) {
   return (
     <div className='container-fluid content-container containeeer'>
     <div className='category-thumbnail'>
+    <Button variant="success">Takaisin</Button>{'  '}
       <ProductsCard url={url} />
    </div>
    </div>
