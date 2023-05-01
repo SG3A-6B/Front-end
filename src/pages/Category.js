@@ -1,13 +1,13 @@
 import React from 'react';
 import ProductsCard from '../components/ProductsCard';
+import ThemeProvider from 'react-bootstrap/ThemeProvider';
+import Button from 'react-bootstrap/Button';
 
 export default function Category({url}) {
   return (
-    
     <div className='container-fluid content-container containeeer'>
     <div className='category-thumbnail'>
       <ProductsCard url={url} />
-    
    </div>
    </div>
   )
