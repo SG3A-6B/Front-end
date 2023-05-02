@@ -25,6 +25,13 @@ body {
   min-height: 100vh;
 }
 
+.route-container{
+  display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background-color: $green;
+}
 //Etusivu
 
 .content-container {
@@ -47,8 +54,6 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     padding: 2.5vh 15%;
-    /* background-color: black; */ //Elementin havainnointia varten
-    width: 100%;
     min-height: 100vh;
   }
 
@@ -56,9 +61,8 @@ body {
     display: inline-flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 100%;
+    width: 100vw;
     min-height: 40vh;
-    /* background-color: gray; */ //Elementin havainnointia varten
 
      .card{
       width: 10rem;
@@ -77,7 +81,7 @@ body {
 
 .navbar {
   display: flex;
-  background-color: #808000;
+  background-color: $olive;
   position: fixed;
   width: 100%;
   z-index: 500;
@@ -89,6 +93,8 @@ body {
   .info {
     font-weight: bold;
   }
+
+  
 }
 
 //Footer
@@ -106,7 +112,9 @@ body {
   }
 }
 
-
+#notfound{
+  margin-top: 25vh;
+}
 
 //Komponentit
 
@@ -114,14 +122,20 @@ body {
 
 .card {
   margin: 12px;
-  width: 24rem;
+  width: 18rem;
   height: fit-content;
 
   >img {
-    height: 255px;
+    height: 225px;
   }
 
   .cardbody {
     padding: 5px 15px;
+  }
+
+  .pricetag{
+    font-weight: bolder;
+    color: red;
+    font-size: 2rem;
   }
 }
