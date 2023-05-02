@@ -2,6 +2,7 @@ import React from 'react'
 
 export default function About() {
 
+
   return (
     <div className='about content-container'>
         <div className='about-title'>Hieman meistä</div>
@@ -24,5 +25,4 @@ export default function About() {
         <p className='about-content'>Max Perunka: Tuotteen omistaja</p>
     </div> 
   )
-
 }
