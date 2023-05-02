@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import { Link, Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer';
 import Home from './pages/Home';
+import About from './pages/About';
 import Category from './pages/Category';
 import ProductsCard from './components/ProductsCard';
 import ProductCard from './components/ProductCard';
@@ -21,6 +22,7 @@ function App() {
   return (
     <div className='container-fluid app-container'>
       <Navbar url={URL} />
+
       <div className='route-container'>
         <Routes>
           <Route path="/" element={<Home url={URL} />} />
@@ -30,6 +32,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
+
       <Footer />
     </div>
   );
