@@ -113,7 +113,12 @@ body {
 }
 
 #notfound{
-  margin-top: 25vh;
+  margin-top: 15vh;
+  font-size: 3rem;
+}
+
+.imgholder{
+  width: 90vw;
 }
 
 //Komponentit
@@ -131,5 +136,11 @@ body {
 
   .cardbody {
     padding: 5px 15px;
+  }
+
+  .pricetag{
+    font-weight: bolder;
+    color: red;
+    font-size: 2rem;
   }
 }
