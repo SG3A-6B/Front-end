@@ -9,7 +9,6 @@ import About from './pages/About';
 import Category from './pages/Category';
 import ProductsCard from './components/ProductsCard';
 import ProductCard from './components/ProductCard';
-import About from './pages/About';
 import NotFound from './pages/NotFound';
 
 
