@@ -97,6 +97,11 @@ body {
 .card .cardbody {
   padding: 5px 15px;
 }
+.card .pricetag {
+  font-weight: bolder;
+  color: red;
+  font-size: 2rem;
+}
 
 .content-container .about{
   min-height: 90.6vh;
