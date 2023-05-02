@@ -83,7 +83,12 @@ body {
 }
 
 #notfound {
-  margin-top: 25vh;
+  margin-top: 15vh;
+  font-size: 3rem;
+}
+
+.imgholder {
+  width: 90vw;
 }
 
 .card {
@@ -101,19 +106,6 @@ body {
   font-weight: bolder;
   color: red;
   font-size: 2rem;
-}
-
-.content-container .about{
-  min-height: 90.6vh;
-}
-
-.about-title{
-  margin: 20px;
-  font-size: larger;
-}
-
-.about-content{
-  margin: 12px;
 }
 
 /*# sourceMappingURL=App.css.map */
