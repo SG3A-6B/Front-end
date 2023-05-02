@@ -7,7 +7,7 @@ import { CardSubtitle } from 'reactstrap'
 
 
 
-export default function ProductsCard({ url }) {
+export default function ProductsCard({ url,addToCart }) {
     const [products, setProducts] = useState([])
 
     let params = useParams()

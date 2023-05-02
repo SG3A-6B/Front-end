@@ -71,6 +71,14 @@ body {
   font-weight: bold;
 }
 
+.about {
+  margin: 10px;
+}
+
+.about-title {
+  font-size: large;
+}
+
 .footer-row {
   margin: 0px;
   display: flex;
