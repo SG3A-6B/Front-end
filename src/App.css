@@ -97,5 +97,10 @@ body {
 .card .cardbody {
   padding: 5px 15px;
 }
+.card .pricetag {
+  font-weight: bolder;
+  color: red;
+  font-size: 2rem;
+}
 
 /*# sourceMappingURL=App.css.map */
