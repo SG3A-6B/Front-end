@@ -24,7 +24,7 @@ export default function CategoryCard({ url }) {
         <div className='thumbnail'>
             {categories.map(category => (
                 <Card className='card' onClick={() => { window.location = "/products/" + category.id }} key={category.id}> {/* Vaihdetaan toimimaan Route-avulla */}
-                    <Card.Img variant="top" src={require("../images/" + category.id + ".jpg")} /> {/* Muutetaan hakemaan oikea kuva kun mahdollista */}
+                    <Card.Img variant="top" src={(url + 'images/categories/' + category.image)} /> {/* Muutetaan hakemaan oikea kuva kun mahdollista */}
                     <Card.Body className='cardbody'>
                         <Card.Title>{category.name}</Card.Title>
                     </Card.Body>
