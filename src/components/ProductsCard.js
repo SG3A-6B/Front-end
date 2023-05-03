@@ -10,6 +10,8 @@ import { CardSubtitle } from 'reactstrap'
 export default function ProductsCard({ url }) {
     const [products, setProducts] = useState([])
 
+
+
     let params = useParams()
 
     useEffect(() => {
@@ -46,3 +48,4 @@ export default function ProductsCard({ url }) {
         </div>
     )
 }
+
