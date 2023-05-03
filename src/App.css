@@ -23,7 +23,6 @@ body {
 }
 
 .content-container {
-  height: -moz-fit-content;
   height: fit-content;
   margin: auto;
   padding-top: 8vh;
@@ -66,11 +65,14 @@ body {
   z-index: 500;
 }
 .navbar #basic-navbar-nav {
-  max-width: -moz-fit-content;
   max-width: fit-content;
 }
 .navbar .info {
   font-weight: bold;
+}
+.navbar img {
+  max-width: 55px;
+  padding-right: 15px;
 }
 
 .about {
@@ -90,7 +92,6 @@ body {
   position: static;
 }
 .footer-row .col {
-  max-width: -moz-fit-content;
   max-width: fit-content;
 }
 
@@ -106,7 +107,6 @@ body {
 .card {
   margin: 12px;
   width: 18rem;
-  height: -moz-fit-content;
   height: fit-content;
 }
 .card > img {
@@ -122,7 +122,6 @@ body {
 }
 
 .wrapper {
-  height: -moz-fit-content;
   height: fit-content;
   width: 99vw;
   margin: 6rem auto;
@@ -137,7 +136,6 @@ body {
   margin-bottom: 3rem;
 }
 .wrapper h5 {
-  width: -moz-fit-content;
   width: fit-content;
   font-weight: bold;
   margin-bottom: 1rem;
@@ -196,11 +194,11 @@ body {
 }
 @keyframes showForm {
   from {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
   to {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
-}/*# sourceMappingURL=App.css.map */
+}
+
+/*# sourceMappingURL=App.css.map */

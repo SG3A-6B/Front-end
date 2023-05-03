@@ -34,7 +34,7 @@ export default function ProductNavbar({ url, onLogout }) {
                         <NavDropdown.Item href={"/products/" + category.id} key={category.id}>{category.name}</NavDropdown.Item>
                     ))}
                 </NavDropdown>
-                <Navbar.Brand href="/">Retkireppu</Navbar.Brand>
+                <Navbar.Brand href="/"><img src={require("../images/logo-pieni.jpg")}/>Retkireppu</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
