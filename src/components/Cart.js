@@ -6,7 +6,7 @@ import NotFound from "../pages/NotFound";
     let sum = 0;
 
     return (
-        <div>
+        <div className="container-fluid kori">
             <h3 className="header">Tuotteet ostoskorissa</h3>
             <table classname="table">
             <tbody>

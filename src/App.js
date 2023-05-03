@@ -14,6 +14,7 @@ import Login from './pages/Login'
 import ManageCategories from './pages/ManageCategories'
 import ManageProducts from './pages/ManageProducts'
 import AddAdmin from './pages/AddAdmin'
+import Cart from './components/Cart';
 
 
 
@@ -58,6 +59,7 @@ function App() {
           <Route path="/products/:categoryId" element={<Category url={URL} addToCart={addToCart}/>} />
           <Route path="/product/:productId" element={<ProductCard url={URL} />} />
           <Route path="/about" element={<About />} />
+          <Route path="/order" element={<Cart cart={cart} />} />
           <Route path="*" element={<NotFound />} />
           <Route path="/login" element={<Login url={URL} onLogin={handleLogin} />} />
           <Route path="/managecategories" element={<ManageCategories url={URL} onLogout={handleLogout} />} />

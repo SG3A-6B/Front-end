@@ -83,6 +83,11 @@ body {
   font-size: large;
 }
 
+.kori {
+  margin: 12vh;
+  background-color: #FFF;
+}
+
 .footer-row {
   margin: 0px;
   display: flex;
