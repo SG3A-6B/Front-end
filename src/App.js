@@ -33,7 +33,6 @@ function App() {
     navigate('/login');
   }
 
-//ostoskorin kanssa toimivaksi
   const [cart, setCart] = useState([]);
 
   useEffect(() => {

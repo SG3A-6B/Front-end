@@ -42,6 +42,7 @@ export default function ProductsCard({ url,addToCart }) {
                         <Card.Title>{product.brand} {product.name}</Card.Title>
                         <CardSubtitle>{product.description}</CardSubtitle>
                         <Card.Text className='pricetag'>{product.price}€</Card.Text>
+                        <Button color="primary" onClick={e => addToCart(product)}>Lisää ostoskoriin</Button>
                     </Card.Body>
                 </Card>
             ))}
