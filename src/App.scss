@@ -26,13 +26,14 @@ body {
   background-color: $green;
 }
 
-.route-container{
+.route-container {
   display: inline-flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    min-height: 100vh;
-    background-color: $green;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background-color: $green;
 }
+
 //Etusivu
 
 .content-container {
@@ -46,7 +47,8 @@ body {
     margin: auto;
   }
 
-  .card:hover {     //Tähän voi lisätä animaatioita yms
+  .card:hover {
+    //Tähän voi lisätä animaatioita yms
     cursor: pointer;
   }
 
@@ -65,7 +67,7 @@ body {
     width: 100vw;
     min-height: 40vh;
 
-     .card{
+    .card {
       width: 10rem;
     }
   }
@@ -95,16 +97,16 @@ body {
     font-weight: bold;
   }
 
-  
+
 }
 
 //Info
 
-.about{
+.about {
   margin: 10px;
 }
 
-.about-title{
+.about-title {
   font-size: large;
 }
 
@@ -123,12 +125,12 @@ body {
   }
 }
 
-#notfound{
+#notfound {
   margin-top: 15vh;
   font-size: 3rem;
 }
 
-.imgholder{
+.imgholder {
   width: 90vw;
 }
 
@@ -149,9 +151,112 @@ body {
     padding: 5px 15px;
   }
 
-  .pricetag{
+  .pricetag {
     font-weight: bolder;
     color: red;
     font-size: 2rem;
   }
+}
+
+// ADMIN
+// MANAGE CATEGORIES
+.wrapper {
+  height: fit-content;
+  width: 99vw;
+  margin: 6rem auto;
+  padding-left: 5rem;
+  padding-right: 5rem;
+
+  h3 {
+    margin-bottom: 3rem;
+    font-weight: bold;
+  }
+
+  .adding {
+    margin-bottom: 3rem;
+  }
+
+  h5 {
+    width: fit-content;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #000;
+  }
+
+  .category-error {
+    margin-bottom: .5rem;
+  }
+
+  .table {
+    border: #000;
+  }
+
+  .delete {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+  }
+
+  .delete:hover {
+    color: #000;
+  }
+
+  .category-input {
+    margin-bottom: 1rem;
+  }
+
+  .category-submit {
+    margin-top: .6rem;
+  }
+
+  .image-link {
+    color: #000;
+  }
+
+  .product-table {
+    margin-bottom: 2rem;
+  }
+
+  label {
+    display: block;
+  }
+
+  input {
+    width: 15rem;
+    margin-bottom: .5rem;
+  }
+
+  .description {
+    min-height: 10rem;
+    width: 20rem;
+  }
+
+  .product-form {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .product-error {
+    margin-bottom: 1rem;
+  }
+
+  .prdouct-submit {
+    margin-bottom: 3rem;
+  }
+
+  .animate {
+    animation: showForm .5s ease-in-out;
+  }
+
+  @keyframes showForm {
+    from {
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    to {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+
 }

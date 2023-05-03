@@ -7,7 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 
-export default function ProductNavbar({ url }) {
+export default function ProductNavbar({ url, onLogout }) {
     const [categories, setCategories] = useState([])
 
     useEffect(() => {
@@ -22,6 +22,9 @@ export default function ProductNavbar({ url }) {
             })
     }, [])
 
+    function handleLogout() {
+        onLogout();
+    }
 
     return (
         <Navbar className="navbar" expand="lg">
@@ -37,6 +40,19 @@ export default function ProductNavbar({ url }) {
                     <Nav className="me-auto">
                         <Nav.Link href="/about">Info</Nav.Link>
                         <Nav.Link className="cart" href="/order">Ostoskori</Nav.Link>
+                        {localStorage.getItem('isLoggedIn') === 'true' && (
+                            <NavDropdown title="Admin" id="basic-nav-dropdown">
+                                <NavDropdown.Item href="/managecategories">Hallinnoi kategorioita</NavDropdown.Item>
+                                <NavDropdown.Item href="/manageproducts">Hallinnoi tuotteita</NavDropdown.Item>
+                                <NavDropdown.Item href="/addadmin">Lisää admin</NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <span onClick={handleLogout}>Kirjaudu ulos</span>
+                                </NavDropdown.Item>
+                            </NavDropdown>
+                        )}
+                        {localStorage.getItem('isLoggedIn') === 'false' && (
+                            <Nav.Link href="/login">Kirjaudu</Nav.Link>
+                        )}
                     </Nav>
                 </Navbar.Collapse>
             </Container>
