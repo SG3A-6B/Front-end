@@ -43,15 +43,35 @@ function App() {
   
 
   function addToCart(product) {
+    if (cart.some(item => item.id === product.id)) {
+      const existingProduct = cart.filter(item => item.id === product.id)
+      updateAmount(parseInt(existingProduct[0].amount) + 1, product)
+    }
+    else {
+    product['amount'] = 1;
     const newCart = [...cart,product];
     setCart(newCart);
     localStorage.setItem('cart',JSON.stringify(newCart));
+    }
   }
 
   function removeFromCart(product) {
     const itemsWithoutRemoved = cart.filter(item => item.id !== product.id)
     setCart(itemsWithoutRemoved)
     localStorage.setItem('cart',JSON.stringify(itemsWithoutRemoved))
+  }
+
+  function updateAmount(amount,product) {
+    product.amount = amount;
+    const index = cart.findIndex((item => item.id === product.id));
+    const modifiedCart = Object.assign([...cart],{[index]: product});
+    setCart(modifiedCart);
+    localStorage.setItem('cart',JSON.stringify(modifiedCart));
+  }
+
+  function emptyCart() {
+    setCart([]);
+    localStorage.removeItem('cart');
   }
 
   return (
@@ -64,7 +84,7 @@ function App() {
           <Route path="/products/:categoryId" element={<Category url={URL} addToCart={addToCart}/>} />
           <Route path="/product/:productId" element={<ProductCard url={URL} />} />
           <Route path="/about" element={<About />} />
-          <Route path="/order" element={<Cart cart={cart} removeFromCart={removeFromCart} />} />
+          <Route path="/order" element={<Cart url={URL} cart={cart} removeFromCart={removeFromCart} updateAmount={updateAmount} empty={emptyCart}/>} />
           <Route path="*" element={<NotFound />} />
           <Route path="/login" element={<Login url={URL} onLogin={handleLogin} />} />
           <Route path="/managecategories" element={<ManageCategories url={URL} onLogout={handleLogout} />} />

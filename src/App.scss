@@ -115,9 +115,23 @@ body {
 
 //Cart
 
+.completed {
+  margin: 12vh 42vw;
+}
+
 .kori{
-  margin: 12vh;
+  margin: 12vh 23vw;
   background-color: #FFF;
+  width: 50vw;
+  padding: 15px;
+
+  td {
+    padding-right: 7vw;
+  }
+
+  .tilausbtn{
+    margin-top: 12px;
+  }
 }
 
 
