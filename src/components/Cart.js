@@ -2,7 +2,7 @@ import React from "react";
 import uuid from 'react-uuid'
 import NotFound from "../pages/NotFound";
 
-   export default function Cart({cart}) {
+   export default function Cart({cart, removeFromCart}) {
     let sum = 0;
 
     return (
@@ -16,7 +16,7 @@ import NotFound from "../pages/NotFound";
                         <tr key={uuid()}>
                             <td> {product.name}</td>
                             <td>{product.price} €</td>
-                            <td></td>
+                            <td><a href="#" onClick={() => removeFromCart(product)}>Poista tuote</a></td>
                         </tr>
                     )
                 })}

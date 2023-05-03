@@ -48,6 +48,12 @@ function App() {
     localStorage.setItem('cart',JSON.stringify(newCart));
   }
 
+  function removeFromCart(product) {
+    const itemsWithoutRemoved = cart.filter(item => item.id !== product.id)
+    setCart(itemsWithoutRemoved)
+    localStorage.setItem('cart',JSON.stringify(itemsWithoutRemoved))
+  }
+
   return (
     <div className='container-fluid app-container'>
       <Navbar url={URL} onLogout={handleLogout} />
@@ -58,7 +64,7 @@ function App() {
           <Route path="/products/:categoryId" element={<Category url={URL} addToCart={addToCart}/>} />
           <Route path="/product/:productId" element={<ProductCard url={URL} />} />
           <Route path="/about" element={<About />} />
-          <Route path="/order" element={<Cart cart={cart} />} />
+          <Route path="/order" element={<Cart cart={cart} removeFromCart={removeFromCart} />} />
           <Route path="*" element={<NotFound />} />
           <Route path="/login" element={<Login url={URL} onLogin={handleLogin} />} />
           <Route path="/managecategories" element={<ManageCategories url={URL} onLogout={handleLogout} />} />
