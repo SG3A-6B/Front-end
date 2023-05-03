@@ -7,7 +7,7 @@ import { CardSubtitle } from 'reactstrap'
 
 
 
-export default function ProductsCard({ url }) {
+export default function ProductsCard({ url,addToCart }) {
     const [products, setProducts] = useState([])
 
 
@@ -37,7 +37,7 @@ export default function ProductsCard({ url }) {
         <div className='thumbnail'>
             {products.map(product => (
                 <Card className='card' key={product.id}>
-                    <Card.Img variant="top" src={(url + 'images/' + product.image)} />
+                    <Card.Img variant="top" src={(url + 'images/products/' + product.image)} />
                     <Card.Body className='cardbody'>
                         <Card.Title>{product.brand} {product.name}</Card.Title>
                         <CardSubtitle>{product.description}</CardSubtitle>

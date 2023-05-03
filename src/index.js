@@ -4,12 +4,23 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import { positions, Provider as AlertProvider } from 'react-alert'
+import AlertTemplate from 'react-alert-template-basic'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const options = {
+  position: positions.BOTTOM_CENTER,
+  timeout: 5000,
+  offset: '5rem',
+}
+
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <AlertProvider template={AlertTemplate} {...options}>
+        <App />
+      </AlertProvider>
     </BrowserRouter>
   </React.StrictMode>
 );
